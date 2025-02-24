@@ -4,6 +4,7 @@
              x:Class="LoginApp.MainPage">
 
     <ScrollView>
+        
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
@@ -51,6 +52,7 @@
                 HorizontalOptions="Fill" />
             
         </VerticalStackLayout>
+        
     </ScrollView>
 
 </ContentPage>
