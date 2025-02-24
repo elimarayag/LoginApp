@@ -15,25 +15,26 @@
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
-        Text="Email"
-        Style="{StaticResource SubHeadline}"
-        SemanticProperties.HeadingLevel="Level2"
-        SemanticProperties.Description="Enter your email address" />
-            <Entry
-        Placeholder="Enter your email"
-        Keyboard="Email"
-        Style="{StaticResource EntryStyle}" />
+                Text="Email"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Enter your email address" />
 
-            <!-- Password Label and TextBox -->
-            <Label
-        Text="Password"
-        Style="{StaticResource SubHeadline}"
-        SemanticProperties.HeadingLevel="Level2"
-        SemanticProperties.Description="Enter your password" />
             <Entry
-        Placeholder="Enter your password"
-        IsPassword="True"
-        Style="{StaticResource EntryStyle}" />
+                Placeholder="Enter your email"
+                Keyboard="Email"
+                Style="{StaticResource EntryStyle}" />
+            
+            <Label
+                Text="Password"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Enter your password" />
+            
+            <Entry
+                Placeholder="Enter your password"
+                IsPassword="True"
+                Style="{StaticResource EntryStyle}" />
 
             <Button
                 x:Name="LoginBtn"
@@ -48,6 +49,7 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            
         </VerticalStackLayout>
     </ScrollView>
 
