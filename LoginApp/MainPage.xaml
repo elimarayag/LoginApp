@@ -40,15 +40,11 @@
             <Button
                 x:Name="LoginBtn"
                 Text="Login" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
 
             <Button
                 x:Name="RegisterBtn"
                 Text="Register" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
             
         </VerticalStackLayout>
