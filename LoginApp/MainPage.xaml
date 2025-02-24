@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+       
+
+            <Label
+                Text="Login Form"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+        Text="Email"
+        Style="{StaticResource SubHeadline}"
+        SemanticProperties.HeadingLevel="Level2"
+        SemanticProperties.Description="Enter your email address" />
+            <Entry
+        Placeholder="Enter your email"
+        Keyboard="Email"
+        Style="{StaticResource EntryStyle}" />
+
+            <!-- Password Label and TextBox -->
+            <Label
+        Text="Password"
+        Style="{StaticResource SubHeadline}"
+        SemanticProperties.HeadingLevel="Level2"
+        SemanticProperties.Description="Enter your password" />
+            <Entry
+        Placeholder="Enter your password"
+        IsPassword="True"
+        Style="{StaticResource EntryStyle}" />
+
+            <Button
+                x:Name="LoginBtn"
+                Text="Login" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="RegisterBtn"
+                Text="Register" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
