@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace LoginApp.ViewModels
 {
-    public partial class LoginPageViewModel : BaseViewModel
+    public partial class BaseViewModel: ObservableObject
     {
         [ObservableProperty]
-        private string _userName;
+        public bool _isBusy;
 
         [ObservableProperty]
-        private string _password;
+        public string _title;
     }
 }
